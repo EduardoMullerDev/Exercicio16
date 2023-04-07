@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+class exercicio16 {
+
+    public static void main(String[] args) {
+
+        int area;
+        double litros;
+        double quantidadelata;
+        double valorfinal;
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Area a ser pintada:");
+
+        area = teclado.nextInt();
+
+        litros = area / 6;
+
+        quantidadelata = Math.ceil(litros / 18);
+
+        valorfinal = quantidadelata * 80;
+
+        System.out.println("quantidade de lata " + quantidadelata);
+        System.out.println("valorfinal: " + valorfinal);
+    }
+}
